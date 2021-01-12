@@ -78,7 +78,7 @@ friends_info %>%
   geom_smooth(se = FALSE) + 
   labs(x = "Episode", y = "US views (millions)", color = "Season", title = "Friends viewership and ratings across episodes and seasons", 
        size = "IMDB rating") +
-  guides(color = guide_legend(override.aes = list(size = 3)))
+  guides(color = guide_legend(override.aes = list(size = 3))) 
 
 friends_info %>% 
   arrange(imdb_rating) %>% 
